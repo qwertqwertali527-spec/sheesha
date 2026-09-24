@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+dist
+.env
+.env.local
+data/conversations.json
+data/inquiries.json
+*.db
+*.log
+.DS_Store
+.env.local
+data/conversations.json
+data/inquiries.json
