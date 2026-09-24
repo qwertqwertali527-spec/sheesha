@@ -1,0 +1,178 @@
+{
+  "business": {
+    "name": "Dubai Sheesha Delivery",
+    "tagline": "Premium Sheesha Delivered to Your Door in 45 Minutes",
+    "description": "Dubai's most trusted premium sheesha home delivery service. We deliver fully prepared, ready-to-smoke sheesha with professional setup anywhere in Dubai. Licensed, hygienic, and 5-star rated.",
+    "hours": "Daily 4:00 PM - 3:00 AM",
+    "phone": "+971 50 123 4567",
+    "whatsapp": "+971501234567",
+    "email": "orders@sheeshadelivery.ae",
+    "areas": [
+      "Dubai Marina",
+      "JLT - Jumeirah Lake Towers",
+      "JBR - Jumeirah Beach Residence",
+      "Downtown Dubai",
+      "Business Bay",
+      "DIFC",
+      "Palm Jumeirah",
+      "Jumeirah",
+      "Al Barsha",
+      "Dubai Hills",
+      "Arabian Ranches",
+      "Sports City",
+      "Motor City",
+      "JVC - Jumeirah Village Circle",
+      "JVT - Jumeirah Village Triangle",
+      "Discovery Gardens",
+      "Dubai Silicon Oasis",
+      "International City",
+      "Deira",
+      "Bur Dubai",
+      "Al Karama",
+      "Mirdif"
+    ],
+    "deliveryTime": "30-60 minutes depending on location",
+    "deliveryFee": "Free delivery for orders above AED 150, otherwise AED 25"
+  },
+  "services": [
+    {
+      "id": "home_delivery",
+      "name": "Home Delivery Sheesha",
+      "description": "Complete sheesha delivered ready to smoke with charcoal, setup included",
+      "icon": "home"
+    },
+    {
+      "id": "party_packages",
+      "name": "Party & Events",
+      "description": "Multiple sheeshas for parties, birthdays, gatherings with attendant option",
+      "icon": "party"
+    },
+    {
+      "id": "vip_service",
+      "name": "VIP Premium Service",
+      "description": "Luxury sheeshas, premium flavors, dedicated attendant for 4+ hours",
+      "icon": "vip"
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate & Yacht",
+      "description": "Sheesha service for corporate events, yacht parties, private villas",
+      "icon": "corporate"
+    }
+  ],
+  "packages": [
+    {
+      "id": "basic",
+      "name": "Classic Package",
+      "price": "AED 99",
+      "originalPrice": "AED 129",
+      "duration": "3-4 hours",
+      "includes": ["1 Premium Sheesha", "1 Flavor of Choice", "Natural Charcoal", "Setup & Pickup", "Free Delivery"],
+      "popular": false,
+      "bestFor": "1-2 persons"
+    },
+    {
+      "id": "premium",
+      "name": "Premium Package",
+      "price": "AED 149",
+      "originalPrice": "AED 199",
+      "duration": "4-5 hours",
+      "includes": ["1 Luxury Sheesha", "2 Premium Flavors", "Coconut Charcoal", "Setup & Pickup", "Free Delivery", "Extra Mouth Tips"],
+      "popular": true,
+      "bestFor": "2-3 persons"
+    },
+    {
+      "id": "double",
+      "name": "Double Delight",
+      "price": "AED 249",
+      "originalPrice": "AED 299",
+      "duration": "4-5 hours",
+      "includes": ["2 Premium Sheeshas", "3 Flavors", "Coconut Charcoal", "Setup & Pickup", "Free Delivery", "10% Off Next Order"],
+      "popular": false,
+      "bestFor": "3-5 persons, parties"
+    },
+    {
+      "id": "party",
+      "name": "Party Package",
+      "price": "AED 399",
+      "originalPrice": "AED 499",
+      "duration": "5-6 hours",
+      "includes": ["4 Premium Sheeshas", "5 Flavors Mix", "Unlimited Charcoal", "Professional Attendant 2hrs", "Free Delivery", "Setup & Full Service"],
+      "popular": false,
+      "bestFor": "6-10 persons"
+    },
+    {
+      "id": "vip",
+      "name": "VIP Luxury",
+      "price": "AED 599",
+      "originalPrice": "AED 750",
+      "duration": "6+ hours",
+      "includes": ["3 Luxury Designer Sheeshas", "Unlimited Premium Flavors", "Unlimited Charcoal", "Dedicated Attendant 4hrs", "Free Delivery", "Luxury Setup", "Complimentary Drinks"],
+      "popular": false,
+      "bestFor": "VIP events, Yacht, Villa"
+    }
+  ],
+  "flavors": [
+    { "name": "Double Apple", "category": "Fruity", "popular": true },
+    { "name": "Mint", "category": "Fresh", "popular": true },
+    { "name": "Watermelon", "category": "Fruity", "popular": true },
+    { "name": "Grape", "category": "Fruity", "popular": true },
+    { "name": "Blueberry", "category": "Fruity", "popular": true },
+    { "name": "Strawberry", "category": "Fruity", "popular": false },
+    { "name": "Mango", "category": "Fruity", "popular": false },
+    { "name": "Lemon Mint", "category": "Fresh", "popular": true },
+    { "name": "Gum Mint", "category": "Fresh", "popular": false },
+    { "name": "Paan Raas", "category": "Traditional", "popular": true },
+    { "name": "Rose", "category": "Floral", "popular": false },
+    { "name": "Vanilla", "category": "Sweet", "popular": false },
+    { "name": "Chocolate Mint", "category": "Sweet", "popular": false },
+    { "name": "Kiwi", "category": "Fruity", "popular": false },
+    { "name": "Orange", "category": "Fruity", "popular": false }
+  ],
+  "faqs": [
+    {
+      "question": "How quickly can you deliver?",
+      "answer": "We deliver within 30-60 minutes across most Dubai areas. Marina, JLT, JBR, Downtown, Business Bay usually 30-45 mins. Other areas up to 60 mins."
+    },
+    {
+      "question": "What's included in the delivery?",
+      "answer": "Fully prepared sheesha ready to smoke, natural charcoal, tongs, mouth tips, setup by our driver, and pickup later. You just enjoy!"
+    },
+    {
+      "question": "Do you have a minimum order?",
+      "answer": "No minimum, but free delivery for orders above AED 150. Otherwise AED 25 delivery fee."
+    },
+    {
+      "question": "How long does one sheesha last?",
+      "answer": "Classic lasts 3-4 hours, Premium 4-5 hours with charcoal refills included. We provide extra charcoal."
+    },
+    {
+      "question": "Is it legal and hygienic?",
+      "answer": "Yes, we are fully licensed for tobacco delivery in Dubai. All sheeshas are sanitized, with disposable hoses and mouth tips. We follow Dubai Municipality hygiene standards."
+    },
+    {
+      "question": "Can I order for a yacht or villa party?",
+      "answer": "Absolutely! We specialize in yacht, villa, and event deliveries. Our Party and VIP packages include attendant service."
+    },
+    {
+      "question": "What payment methods?",
+      "answer": "Cash on delivery, card on delivery, bank transfer, and coming soon online payment. No advance needed for regular orders."
+    },
+    {
+      "question": "Can I request a specific time?",
+      "answer": "Yes, you can schedule delivery for later today or future date. Just let us know date and time in WhatsApp."
+    }
+  ],
+  "policies": {
+    "age": "Service only for 18+ years. ID may be required on delivery.",
+    "cancellation": "Free cancellation up to 1 hour before delivery time.",
+    "hygiene": "All equipment sanitized, disposable pipes, COVID-safe handling.",
+    "legal": "Compliant with UAE tobacco regulations. Delivery only to private residences, hotels, licensed venues."
+  },
+  "howItWorks": [
+    { "step": 1, "title": "Choose Package", "desc": "Select from our packages on website or WhatsApp" },
+    { "step": 2, "title": "Send Location on WhatsApp", "desc": "Click WhatsApp button and share your requirements" },
+    { "step": 3, "title": "We Prepare & Deliver", "desc": "Fresh sheesha prepared and delivered in 30-60 mins" },
+    { "step": 4, "title": "Enjoy & We Pickup", "desc": "Enjoy your session, we come back to collect equipment" }
+  ]
+}

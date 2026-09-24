@@ -1,0 +1,53 @@
+[
+  {
+    "id": "promo_welcome",
+    "code": "WELCOME20",
+    "title": "Welcome Discount - 20% Off First Order",
+    "description": "Get 20% off your first order, valid for all packages",
+    "discountType": "percentage",
+    "discountValue": 20,
+    "minOrderAmount": 99,
+    "maxUses": 100,
+    "usedCount": 12,
+    "validFrom": "2026-09-24T20:51:49.790Z",
+    "validUntil": "2026-10-24T20:51:49.791Z",
+    "isActive": true,
+    "applicablePackages": "all",
+    "createdAt": "2026-09-24T20:51:49.791Z",
+    "updatedAt": "2026-09-24T20:51:49.791Z"
+  },
+  {
+    "id": "promo_ramadan",
+    "code": "RAMADAN25",
+    "title": "Ramadan Special - AED 25 Off",
+    "description": "Special Ramadan offer, AED 25 off orders above AED 200",
+    "discountType": "fixed",
+    "discountValue": 25,
+    "minOrderAmount": 200,
+    "maxUses": 50,
+    "usedCount": 8,
+    "validFrom": "2026-09-24T20:51:49.791Z",
+    "validUntil": "2026-11-23T20:51:49.791Z",
+    "isActive": true,
+    "applicablePackages": "all",
+    "createdAt": "2026-09-24T20:51:49.791Z",
+    "updatedAt": "2026-09-24T20:51:49.791Z"
+  },
+  {
+    "id": "promo_party",
+    "code": "PARTY50",
+    "title": "Party Package - AED 50 Off",
+    "description": "Get AED 50 off Party and VIP packages",
+    "discountType": "fixed",
+    "discountValue": 50,
+    "minOrderAmount": 300,
+    "maxUses": 20,
+    "usedCount": 3,
+    "validFrom": "2026-09-24T20:51:49.791Z",
+    "validUntil": "2026-10-09T20:51:49.791Z",
+    "isActive": true,
+    "applicablePackages": "[\"party\",\"vip\"]",
+    "createdAt": "2026-09-24T20:51:49.791Z",
+    "updatedAt": "2026-09-24T20:51:49.791Z"
+  }
+]
