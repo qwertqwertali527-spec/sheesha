@@ -1,7 +1,8 @@
 import OpenAI from 'openai'
 import { getSystemPrompt } from './knowledge'
+import { getEnhancedSystemPrompt } from './knowledge-advanced'
 
-const openai = process.env.OPENAI_API_KEY ? new OpenAI({
+const openai = process.env.OPENAI_API_KEY && !process.env.OPENAI_API_KEY.includes('test-key') ? new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 }) : null
 
@@ -43,9 +44,13 @@ export async function processMessage(
   needsHuman: boolean,
   isComplete: boolean
 }> {
-  const systemPrompt = getSystemPrompt()
+  let systemPrompt: string
+  try {
+    systemPrompt = await getEnhancedSystemPrompt(userMessage)
+  } catch {
+    systemPrompt = getSystemPrompt()
+  }
 
-  // If no OpenAI key, use rule-based fallback
   if (!openai) {
     return ruleBasedAssistant(userMessage, conversationHistory)
   }

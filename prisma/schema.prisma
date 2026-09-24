@@ -1,0 +1,112 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Customer {
+  id           String   @id @default(cuid())
+  phone        String   @unique
+  name         String?
+  email        String?
+  totalOrders  Int      @default(0)
+  totalSpent   Float    @default(0)
+  lastOrderAt  DateTime?
+  tags         String?
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  inquiries    Inquiry[]
+  bookings     Booking[]
+}
+
+model Inquiry {
+  id                  String   @id @default(cuid())
+  inquiryId           String   @unique
+  customerId          String?
+  customer            Customer? @relation(fields: [customerId], references: [id])
+  name                String?
+  phone               String
+  email               String?
+  date                String?
+  time                String?
+  location            String?
+  area                String?
+  numberOfSheeshas    Int      @default(1)
+  package             String?
+  flavors             String?
+  specialRequirements String?
+  status              String   @default("collecting")
+  source              String   @default("whatsapp")
+  isComplete          Boolean  @default(false)
+  needsHuman          Boolean  @default(false)
+  summary             String?
+  paymentMethod       String?
+  paymentStatus       String?  @default("pending")
+  couponCode          String?
+  discount            Float    @default(0)
+  totalAmount         Float?
+  assignedTo          String?
+  followUpSent        Boolean  @default(false)
+  rating              Int?
+  feedback            String?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}
+
+model Booking {
+  id           String   @id @default(cuid())
+  customerId   String?
+  customer     Customer? @relation(fields: [customerId], references: [id])
+  date         DateTime
+  time         String
+  duration     Int      @default(240)
+  location     String
+  area         String?
+  package      String
+  numberOfSheeshas Int
+  flavors      String?
+  status       String   @default("pending")
+  paymentMethod String?
+  totalAmount  Float?
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Promotion {
+  id             String   @id @default(cuid())
+  code           String   @unique
+  title          String
+  description    String?
+  discountType   String
+  discountValue  Float
+  minOrderAmount Float?   @default(0)
+  maxUses        Int?
+  usedCount      Int      @default(0)
+  validFrom      DateTime @default(now())
+  validUntil     DateTime?
+  isActive       Boolean  @default(true)
+  applicablePackages String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model KnowledgeEmbedding {
+  id        String   @id @default(cuid())
+  content   String
+  embedding String?
+  category  String
+  metadata  String?
+  createdAt DateTime @default(now())
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(cuid())
+  eventType String
+  metadata  String?
+  createdAt DateTime @default(now())
+}

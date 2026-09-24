@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { formatWhatsAppLink, DEFAULT_WA_MESSAGE } from "@/lib/utils";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,6 +48,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
+            <LanguageToggle />
             <a
               href={`tel:+${waNumber}`}
               className="flex items-center gap-2 text-sm text-white/80 hover:text-white px-4 py-2 rounded-full border border-white/20"
